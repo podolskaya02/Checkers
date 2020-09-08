@@ -1,7 +1,6 @@
-package sample.controller;
+package sample.view;
 
-import sample.view.Board;
-import sample.view.Checkers;
+import sample.controller.PlayerAction;
 
 import javax.swing.*;
 

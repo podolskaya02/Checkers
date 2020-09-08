@@ -29,14 +29,14 @@ class Tests {
         PlayerTurn pt = new PlayerTurn();
         pt.coordY = 0; pt.coordX = 1; ListConstant.firstPlayerMove = true;
         ListConstant.coordY = 0; ListConstant.coordX = 1;
-        ListConstant.checkers[ListConstant.coordY][ListConstant.coordX] = -1;
+        ListConstant.checkers[ListConstant.coordY][ListConstant.coordX] = 1;
         pt.proofCheck();
         assertEquals(3, ListConstant.checkers[ListConstant.coordY][ListConstant.coordX]);
         ListConstant.saveY = 3; ListConstant.saveX = 3;
     }
 
     @Test
-    void CheckSimpleCheckers(){ // можем побить просто шашкой шашку противника
+    void CheckSimpleCheckers(){ // можем побить простой шашкой шашку противника
         ImpactCheck impactCheck = new ImpactCheck();
         i = 0; j = 7; player = -1;
         ListConstant.checkers[i+1][j-1] = 1;
